@@ -1,0 +1,27 @@
+<view wx:if="{{!detail}}">
+  <van-skeleton row="5"></van-skeleton>
+</view>
+
+<view class="detail" wx:else>
+  <view class="title">{{detail.title}}</view>
+  <view class="info">
+    <view class="left">
+      <text>{{detail.publish_date}}</text>
+      <text>{{detail.author}}</text>
+      <text>{{detail.view_count}}阅读</text>
+    </view>
+    <view class="right">
+      <van-icon name="share-o" size="18" />
+      <text>分享</text>
+      <button open-type="share" class="share" size="mini">
+      </button>
+    </view>
+  </view>
+  <view class="content">
+    <rich-text nodes=" {{detail.content}}"></rich-text>
+  </view>
+  <view class="copyright">
+    <view class="top">免责声明</view>
+    <view class="ct">本文来自网络新闻创作者，不代表巷子深Lorem ipsum,</view>
+  </view>
+</view>

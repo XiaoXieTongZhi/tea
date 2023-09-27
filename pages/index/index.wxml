@@ -1,0 +1,62 @@
+<xzs-header></xzs-header>
+<view class="banner">
+  <swiper previous-margin="30rpx" circular autoplay interval='3000' indicator-dots indicator-active-color='var(--globalbgColor3)'>
+    <swiper-item>
+      <image src="/static/image/banner0.jpg" mode="" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/static/image/banner1.jpg" mode="" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/static/image/banner2.jpg" mode="" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/static/image/banner3.jpg" mode="" />
+    </swiper-item>
+  </swiper>
+
+
+
+
+</view>
+
+<view class="scrollNav">
+  <scroll-view scroll-x>
+    <navigator open-type="reLaunch" url="/pages/classify/classify?idx={{index}}" class="item" wx:for="{{navArr}}" wx:key="_id">
+      <view class="pic">
+        <image src="{{item.icon}}"  />
+      </view>
+      <view class="text">
+        {{item.classname}}
+      </view>
+    </navigator>
+  </scroll-view>
+</view>
+
+<view class="about">
+  <view class="pubTitle">
+    <view class="en">introduce</view>
+    <view class="cn">茶美文化馆简介</view>
+    <view class="line"></view>
+  </view>
+  <view class="content">
+    <view class="row">白茶是好滴啊回到i等候i岩溶发育反应我阳奉阴违有为一体额9衣服收到回复粉红色哦i额 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad deserunt ipsam molestias, voluptatibus ex nam maiores expedita veritatis vero eius et tempora minus, quasi nisi voluptates. Voluptates accusamus quo quisquam?</view>
+    <view class="row">Lorem ipsum dolor sit amet consectetur adipisicing elit.</view>
+    <view class="row">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi suscipit dolores, ducimus minima ipsum inventore nemo optio sapiente.</view>
+  </view>
+</view>
+
+<view class="news">
+  <view class="pubTitle">
+    <view class="en">news</view>
+    <view class="cn">新闻资讯</view>
+    <view class="line"></view>
+  </view>
+  <view class="content">
+    <view class="box" wx:for="{{newsArr}}" wx:key="_id">
+     <xzs-news-item item="{{item}}"></xzs-news-item>
+    </view>
+  </view>
+</view>
+
+<xzs-footer></xzs-footer>

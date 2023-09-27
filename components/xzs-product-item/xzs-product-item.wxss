@@ -1,0 +1,31 @@
+.product .pic .image {
+  width: 100%;
+}
+
+.product .text {
+  text-align: left;
+}
+
+.product .text .title {
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: 400;
+}
+
+.product .text .info {
+  margin-top: 20rpx;
+}
+
+.product .text .info .row {
+  display: flex;
+  font-size: 28rpx;
+  margin-bottom: 15rpx;
+}
+
+.product .text .info .row .left {
+  color: var(--greyColor);
+}
+
+.product .text .info .row .right {
+  color: var(--focusColor);
+}

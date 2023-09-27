@@ -1,0 +1,17 @@
+.header{
+  height: 120rpx;
+  border: 1px solid var(--themeColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo{
+height: 85rpx;
+    .pic{
+      height: 100%;
+    }
+}
+
+ .search{
+  color:var(--themeColor)
+ }
+}

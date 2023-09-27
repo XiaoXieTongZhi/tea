@@ -1,0 +1,11 @@
+<view class="footer">
+<view class="row">Copyright {{year}} 版权所有</view>
+<view class="row">解释权归小解同志所有</view>
+<view class="row">河北省石家庄市</view>
+</view>
+  
+  <view class="kefu">
+ <button class="btn" open-type="contact"></button>
+  <image src="/static/image/kefu.png" mode="aspectFill" class="pic"/>
+  <view class="line"></view>
+  </view>

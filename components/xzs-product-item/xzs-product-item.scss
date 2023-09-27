@@ -1,0 +1,30 @@
+.product{
+   .pic{
+    
+     .image{
+       width: 100%;
+     }
+   }
+   .text{
+     text-align: left;
+     .title{
+       text-align: center;
+       font-size: 36rpx;
+      font-weight: 400;
+      }
+      .info{
+        margin-top: 20rpx;
+        .row{
+          display: flex;
+           font-size: 28rpx;
+           margin-bottom: 15rpx;
+           .left{
+             color:var(--greyColor)
+           }
+           .right{
+             color: var(--focusColor);
+           }
+        }
+     }
+   }
+}
