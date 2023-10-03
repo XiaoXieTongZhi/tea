@@ -3,7 +3,6 @@
   <view class="content">
     <view class="box" wx:for="{{newsArr}}" wx:key="_id">
       <xzs-news-item item="{{item}}">
-
       </xzs-news-item>
     </view>
   </view>
